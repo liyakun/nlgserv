@@ -23,6 +23,7 @@ def start_server(host, port, output=None, error=None):
                             stdin=PIPE,
                             stdout=output,
                             stderr=error,
+                            shell=True,
                             preexec_fn=os.setsid)
     
     return server_instance
