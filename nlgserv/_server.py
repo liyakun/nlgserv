@@ -177,8 +177,7 @@ def process_features(element, f_spec):
         else:
             raise Exception("Unrecognised feature: %s" % (feature,))
 
-if __name__=="__main__":
-    host = sys.argv[1]
-    port = int(sys.argv[2])
-    print("Starting to run on %s, port %s" % (host, port))
-    run(host=host, port=port, debug=True)
+host = sys.argv[1]
+port = int(sys.argv[2])
+print("Starting to run on %s, port %s" % (host, port))
+run(host=host, port=port)
