@@ -20,7 +20,7 @@ nlgFactory = NLGFactory(lexicon)
 realiser = Realiser(lexicon)
 
 # Process the request to http://host:port/generateSentence
-@route('/', method="POST")
+@route('/generateSentence', method="POST")
 def process_generate_sentence_request():
     try:
         # Generate the sentence from the JSON payload.
