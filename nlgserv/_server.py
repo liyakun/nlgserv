@@ -181,4 +181,4 @@ if __name__=="__main__":
     host = sys.argv[1]
     port = int(sys.argv[2])
     print("Starting to run on %s, port %s" % (host, port))
-    run(host=host, port=port)
+    run(host=host, port=port, debug=True)
